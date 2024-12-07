@@ -23,12 +23,12 @@ function checkGuess() {
   guesses.textContent += userGuess + " ";
 
   if (userGuess === numeroaleartorio) {
-    lastResult.textContent = "¡Felicidades! ¡Lo adivinaste!";
+    lastResult.textContent = "¡Felicidades! Seras el proximo Tesla";
     lastResult.style.backgroundColor = "green";
     BajoAlto.textContent = "";
     setGameOver();
-  } else if (guessCount === 5) {
-    lastResult.textContent = "¡¡¡Fin del juego!!!";
+  } else if (guessCount === 6) {
+    lastResult.textContent = "¡¡¡Perdiste Pendejo e mrda!!!";
     setGameOver();
   } else {
     lastResult.textContent = "¡Incorrecto!";
